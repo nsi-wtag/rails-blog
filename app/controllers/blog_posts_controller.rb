@@ -2,7 +2,7 @@
 
 class BlogPostsController < ApplicationController
   def index
-    @blog_posts = BlogPost.all
+    @blog_posts = BlogPost.order(:id)
   end
 
   def show
