@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'posts/:id', to: 'blog_posts#show', as: :blog_post
   get 'posts/:id/edit', to: 'blog_posts#edit', as: :edit_blog_post
   patch 'posts/:id', to: 'blog_posts#update'
+  delete 'posts/:id', to: 'blog_posts#destroy'
 
   post '/post', to: 'blog_posts#create', as: :blog_posts
 
